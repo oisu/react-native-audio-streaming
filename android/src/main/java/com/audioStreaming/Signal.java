@@ -350,7 +350,7 @@ public class Signal extends Service implements ExoPlayer.EventListener, Metadata
         remoteViews = new RemoteViews(packageName, R.layout.streaming_notification_player);
         notifyBuilder = new NotificationCompat.Builder(this.context)
         .setContent(remoteViews)
-        .setSmallIcon(smallIconResId)
+        .setSmallIcon(android.R.drawable.ic_lock_silent_mode_off) // TODO Use app icon instead
         .setLargeIcon(largeIconBitmap)
         .setContentTitle(this.getAppTitle())
         .setContentText("Playing an audio file")
